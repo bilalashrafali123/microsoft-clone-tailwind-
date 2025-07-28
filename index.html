@@ -5,27 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Microsoft Clone</title>
   </head>
   <body class="font-sans text-gray-800">
-    <div class="w-full bg-white">
-      <div class="container flex justify-between items-center py-3">
+    <header class="w-full bg-white shadow-sm">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3"
+      >
         <div class="flex items-center md:hidden space-x-4">
           <div class="hamburger p-2 cursor-pointer">
             <div class="h-0.5 w-6 bg-black my-1"></div>
             <div class="h-0.5 w-6 bg-black my-1"></div>
             <div class="h-0.5 w-6 bg-black my-1"></div>
           </div>
-          <div class="search text-gray-700 text-sm flex items-center space-x-2">
-            <input type="text" class="border border-gray-300 rounded px-2 py-1 text-sm" placeholder="Search" />
-            <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="search flex items-center space-x-2">
+            <input
+              type="text"
+              class="border border-gray-300 rounded px-2 py-1 w-24 sm:w-32 text-sm focus:ring-2 focus:ring-blue-500"
+              placeholder="Search"
+            />
+            <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
           </div>
         </div>
         <div class="logo flex items-center space-x-6">
-          <div class="font-bold text-xl">Microsoft</div>
-          <div class="features hidden md:flex space-x-4 text-sm text-gray-700 font-medium">
-            <div class="fitem hover:underline cursor-pointer">Microsoft 365</div>
+          <div class="font-bold text-xl sm:text-2xl">Microsoft</div>
+          <div
+            class="features hidden md:flex space-x-4 text-sm lg:text-base text-gray-700 font-medium"
+          >
+            <div class="fitem hover:underline cursor-pointer">
+              Microsoft 365
+            </div>
             <div class="fitem hover:underline cursor-pointer">Office</div>
             <div class="fitem hover:underline cursor-pointer">Windows</div>
             <div class="fitem hover:underline cursor-pointer">Surface</div>
@@ -35,134 +48,285 @@
         </div>
         <div class="cart hidden md:flex items-center space-x-4">
           <div class="search flex items-center space-x-2">
-            <input type="text" class="border border-gray-300 rounded px-2 py-1 text-sm" placeholder="Search" />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              class="border border-gray-300 rounded px-2 py-1 w-32 lg:w-40 text-sm focus:ring-2 focus:ring-blue-500"
+              placeholder="Search"
+            />
+            <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
           </div>
-          <div class="cursor-pointer"><i class="fa-solid fa-cart-shopping ml-2"></i></div>
-          <div class="cursor-pointer"><i class="fa-solid fa-user ml-2"></i></div>
+          <div class="cursor-pointer">
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+          </div>
+          <div class="cursor-pointer">
+            <i class="fa-solid fa-user text-lg"></i>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="w-full">
-      <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce:VP5-1920x600" alt="banner" class="w-full h-[300px] md:h-[600px] object-fill" />
-    </div>
-
-    <div class="bg-white shadow-md mt-6">
-      <div class="container p-6 md:p-12 md:text-left">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Copilot is your AI Companion</h2>
-        <p class="text-gray-600 text-md mb-4">Always by your side, ready to support you whenever and wherever you need it.</p>
-        <button class="bg-[#0067b8] text-white px-6 py-2 rounded-sm font-semibold hover:bg-blue-700 transition duration-200">Download the Copilot app</button>
+    </header>
+    <section class="w-full">
+      <img
+        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce:VP5-1920x600"
+        alt="banner"
+        class="w-full h-[220px] sm:h-[300px] md:h-[500px] lg:h-[600px] object-cover"
+      />
+    </section>
+    <section class="bg-white shadow-md mt-6 px-4 sm:px-6 lg:px-8">
+      <div class="container p-6 md:p-12 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+          Copilot is your AI Companion
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mb-4">
+          Always by your side, ready to support you whenever and wherever you
+          need it.
+        </p>
+        <button
+          class="bg-[#0067b8] text-white px-6 py-2 rounded-sm font-semibold hover:bg-blue-700 transition duration-200 text-sm sm:text-base"
+        >
+          Download the Copilot app
+        </button>
       </div>
-    </div>
-
-    <div class="container mt-8 flex flex-wrap justify-center gap-6">
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
+    </section>
+    <section class="container mt-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="card image.jpeg" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
+        <div class="bg-white border border-gray-200">
+          <img
+            src="card image.jpeg"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
-        </div>
-      </div>
-    </div>
-
-    <section class="bg-gray-100 py-[90px] mb-8 mt-10 ">
-      <div class="container flex flex-col-reverse md:flex-row items-center justify-between">
-        <div class="bg-white shadow-md p-10 md:p-14 max-w-lg w-full text-center md:text-left">
-          <h2 class="text-2xl md:text-3xl font-bold mb-4">Outlook for iOS and Android</h2>
-          <p class="text-gray-600 mb-6">Connect. Organise. Get things done.</p>
-          <button class="bg-blue-600 text-white px-5 py-2 text-sm font-semibold hover:bg-blue-700 transition duration-200">Download now</button>
-        </div>
-        <div class="flex justify-center ml-3 mb-6 md:mb-0">
-          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP3-1083x600" alt="Outlook App" class="max-w-full md:max-w-lg" />
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
         </div>
       </div>
     </section>
-
-    <div class="container mt-8 flex flex-wrap justify-center gap-6">
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
+    <section class="bg-gray-100 py-[90px] mb-8 mt-10 px-4 sm:px-6 lg:px-8">
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center justify-between"
+      >
+        <div
+          class="bg-white shadow-md p-10 md:p-14 max-w-lg w-full text-center md:text-left"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">
+            Outlook for iOS and Android
+          </h2>
+          <p class="text-gray-600 mb-6">Connect. Organise. Get things done.</p>
+          <button
+            class="bg-blue-600 text-white px-5 py-2 text-sm font-semibold hover:bg-blue-700 transition duration-200"
+          >
+            Download now
+          </button>
+        </div>
+        <div class="flex justify-center ml-3 mb-6 md:mb-0">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP3-1083x600"
+            alt="Outlook App"
+            class="max-w-full md:max-w-lg"
+          />
         </div>
       </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
+    </section>
+    <section class="container mt-8 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-Teams-Commercial-Meeting?wid=380&hei=213&fit=crop"
+            alt="Windows 11"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">
+              Designed for life today – and tomorrow
+            </h2>
+            <p class="text-gray-600 text-sm mb-4">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200"
+            >
+              See if your PC is ready
+            </button>
+          </div>
         </div>
       </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
-        </div>
-      </div>
-      <div class="bg-white border border-gray-200 w-[320px] mt-8">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-Teams-Commercial-Meeting?wid=380&hei=213&fit=crop" alt="Windows 11" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Designed for life today – and tomorrow</h2>
-          <p class="text-gray-600 text-sm mb-4">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-          <button class="bg-[#0067b8] text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition duration-200">See if your PC is ready</button>
-        </div>
-      </div>
-    </div>
-
+    </section>
     <div class="w-full bg-white py-4 mt-4">
-      <div class="container flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-          <span class="text-gray-700 text-sm font-medium">Follow Microsoft</span>
-          <a href="#" class="text-black hover:text-blue-600 text-xl"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-black hover:text-blue-600 text-xl"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="text-black hover:text-blue-600 text-xl"><i class="fab fa-linkedin-in"></i></a>
+      <div
+        class="container flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+          <span class="text-gray-700 text-sm font-medium"
+            >Follow Microsoft</span
+          >
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a href="#" class="text-black hover:text-blue-600 text-xl"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
-        <button class="flex items-center space-x-2 bg-gray-200 px-4 py-3 rounded-sm text-sm font-semibold hover:bg-gray-300 transition">
-          <span>↑</span>
-          <span>Back to top</span>
+        <button
+          class="flex items-center space-x-2 bg-gray-200 px-4 py-3 rounded-sm text-sm font-semibold hover:bg-gray-300 transition"
+        >
+          <span>↑</span><span>Back to top</span>
         </button>
       </div>
     </div>
-
     <footer class="bg-gray-100 text-sm text-gray-700">
-      <div class="container mx-auto py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 px-4">
+      <div
+        class="container mx-auto py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 px-4"
+      >
         <div>
           <h4 class="font-semibold mb-3">What's new</h4>
           <ul class="space-y-2">
             <li><a href="#" class="hover:underline">Surface Pro</a></li>
             <li><a href="#" class="hover:underline">Microsoft Copilot</a></li>
             <li><a href="#" class="hover:underline">Microsoft 365</a></li>
-            <li><a href="#" class="hover:underline">Explore Microsoft products</a></li>
+            <li>
+              <a href="#" class="hover:underline">Explore Microsoft products</a>
+            </li>
             <li><a href="#" class="hover:underline">Windows 11 apps</a></li>
           </ul>
         </div>
@@ -178,13 +342,31 @@
         <div>
           <h4 class="font-semibold mb-3">Education</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Microsoft in education</a></li>
-            <li><a href="#" class="hover:underline">Devices for education</a></li>
-            <li><a href="#" class="hover:underline">Microsoft Teams for Education</a></li>
-            <li><a href="#" class="hover:underline">Microsoft 365 Education</a></li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft in education</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Devices for education</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline"
+                >Microsoft Teams for Education</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft 365 Education</a>
+            </li>
             <li><a href="#" class="hover:underline">Office Education</a></li>
-            <li><a href="#" class="hover:underline">Educator training and development</a></li>
-            <li><a href="#" class="hover:underline">Deals for students and parents</a></li>
+            <li>
+              <a href="#" class="hover:underline"
+                >Educator training and development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline"
+                >Deals for students and parents</a
+              >
+            </li>
             <li><a href="#" class="hover:underline">Azure for students</a></li>
           </ul>
         </div>
@@ -196,8 +378,12 @@
             <li><a href="#" class="hover:underline">Azure</a></li>
             <li><a href="#" class="hover:underline">Dynamics 365</a></li>
             <li><a href="#" class="hover:underline">Microsoft 365</a></li>
-            <li><a href="#" class="hover:underline">Microsoft Advertising</a></li>
-            <li><a href="#" class="hover:underline">Microsoft 365 Copilot</a></li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft Advertising</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft 365 Copilot</a>
+            </li>
             <li><a href="#" class="hover:underline">Microsoft Teams</a></li>
           </ul>
         </div>
@@ -207,10 +393,14 @@
             <li><a href="#" class="hover:underline">Developer Center</a></li>
             <li><a href="#" class="hover:underline">Documentation</a></li>
             <li><a href="#" class="hover:underline">Microsoft Learn</a></li>
-            <li><a href="#" class="hover:underline">Microsoft Tech Community</a></li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft Tech Community</a>
+            </li>
             <li><a href="#" class="hover:underline">Azure Marketplace</a></li>
             <li><a href="#" class="hover:underline">AppSource</a></li>
-            <li><a href="#" class="hover:underline">Microsoft Power Platform</a></li>
+            <li>
+              <a href="#" class="hover:underline">Microsoft Power Platform</a>
+            </li>
             <li><a href="#" class="hover:underline">Visual Studio</a></li>
           </ul>
         </div>
@@ -220,14 +410,20 @@
             <li><a href="#" class="hover:underline">Careers</a></li>
             <li><a href="#" class="hover:underline">About Microsoft</a></li>
             <li><a href="#" class="hover:underline">Company news</a></li>
-            <li><a href="#" class="hover:underline">Privacy at Microsoft</a></li>
+            <li>
+              <a href="#" class="hover:underline">Privacy at Microsoft</a>
+            </li>
             <li><a href="#" class="hover:underline">Investors</a></li>
             <li><a href="#" class="hover:underline">Sustainability</a></li>
           </ul>
         </div>
       </div>
-      <div class="container mx-auto py-6 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-300 mt-6">
-        <div class="flex space-x-6 text-gray-600 text-xs mb-4 md:mb-0">
+      <div
+        class="container mx-auto py-6 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-300 mt-6"
+      >
+        <div
+          class="flex flex-wrap space-x-6 text-gray-600 text-xs mb-4 md:mb-0"
+        >
           <a href="#" class="hover:underline">Sitemap</a>
           <a href="#" class="hover:underline">Contact Microsoft</a>
           <a href="#" class="hover:underline">Privacy</a>
